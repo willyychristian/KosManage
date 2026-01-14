@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type Kamar | KosManage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <h2>KosManage</h2>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="menu">
+    <a href="index.html">Beranda</a>
+    <a class="active" href="kamar.html">Type Kamar</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="page page-kamar">
+  <h1 class="animated-title title-kamar">Type Kamar Kos</h1>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showType('t1',this)">Type 1<br><small>500rb – 900rb</small></button>
+    <button class="tab" onclick="showType('t2',this)">Type 2<br><small>1jt – 2jt</small></button>
+    <button class="tab" onclick="showType('t3',this)">Type 3<br><small>3jt – 4jt</small></button>
+  </div>
+
+  <div class="rooms-wrapper">
+    <div class="rooms active" id="t1"></div>
+    <div class="rooms" id="t2"></div>
+    <div class="rooms" id="t3"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>@Kos-Manage</p>
+</footer>
+
+</body>
+</html>
